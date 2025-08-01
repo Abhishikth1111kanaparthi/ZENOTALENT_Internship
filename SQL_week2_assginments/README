@@ -1,1 +1,5 @@
+The file main.sql contians all the code  for creating table , inserting the data and all tasks query statments.
+  
+And explaination for code add as comments, beside the code which starts with  -- and the comment followed. 
 
+The outputs are stored in TASK_OUTPUTS folder . And they are order from 1 to 10 with respect to the queries(tasks) in main.sql file
