@@ -57,7 +57,6 @@ INSERT INTO Projects (ProjectID, ProjectName, StartDate, EndDate, Status) VALUES
 ('P005', 'Data Migration', '2025-05-05', '2025-09-30', 'On Hold');
 
 ALTER TABLE Projects ADD Budget DECIMAL(12,2);
--- Update the budgets (example values)
 UPDATE Projects SET Budget = 500000 WHERE ProjectID = 'P001';
 UPDATE Projects SET Budget = 700000 WHERE ProjectID = 'P002';
 UPDATE Projects SET Budget = 620000 WHERE ProjectID = 'P003';
