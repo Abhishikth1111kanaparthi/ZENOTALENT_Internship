@@ -12,7 +12,6 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 import re
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 ## task 1
 stop_words = set(stopwords.words('english'))
@@ -29,7 +28,7 @@ data['processed_review'] = data['review'].apply(preprocess_text)  ## adding the 
 
 
 ## task 2 
-def get_ngrams(corpus, n=1):
+def get_ngrams(corpus, n=1): ## func tp convet to n grams 
     vec = CountVectorizer(ngram_range=(n, n)).fit(corpus)
     bag_of_words = vec.transform(corpus)
     sum_words = bag_of_words.sum(axis=0)
@@ -59,7 +58,7 @@ for word, freq in top_trigrams:
     print(f"{word}: {freq}")
 
 ## task 3 
-# Re-create the 'processed_review_str' column
+# Re-create the processed_review_str
 data['processed_review_str'] = data['processed_review'].apply(lambda x: ' '.join(x))
 # top 20 unigrams
 top_unigrams = get_ngrams(data['processed_review_str'], n=1)[:20]
