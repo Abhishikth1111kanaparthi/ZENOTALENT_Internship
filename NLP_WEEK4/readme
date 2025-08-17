@@ -1,1 +1,67 @@
-hello 
+NLP Asignment week 4 
+
+Analysis Report
+
+1. Text Preprocessing
+
+The raw text data was cleaned and prepared for NLP analysis using:
+
+Lowercasing – standardizing words (e.g., Hot → hot).
+
+Tokenization – splitting documents into individual words.
+
+Punctuation Removal – removing unnecessary symbols.
+
+Stopword Removal – eliminating common words (e.g., is, the, I) that add little meaning.
+
+The output is a list of tokenized, cleaned documents ready for analysis.
+
+
+2. TF-IDF Analysis
+
+Term Frequency–Inverse Document Frequency (TF-IDF) measures how important a word is to a document relative to the entire corpus.
+
+Words frequent in one document but rare in others receive higher scores.
+
+The top terms correctly reflected document content:
+
+Weather-related docs: weather, hot, today
+
+Racing-related docs: race, driver, track
+
+This highlighted key differentiating terms in each document.
+
+
+3. Word2Vec Embeddings
+
+Word2Vec learns dense vector representations where similar words are close in the embedding space.
+
+A small custom model was trained on the preprocessed corpus.
+
+Similarity queries (e.g., weather, hot, race, horse) revealed meaningful relationships, though limited by dataset size.
+
+A t-SNE visualization mapped embeddings into 2D, showing approximate word clusters.
+
+
+4. Topic Modeling with LDA
+
+Latent Dirichlet Allocation (LDA) uncovered four main topics:
+
+Topic 1 – Racing: race, driver, car, sped, track, formula
+
+Topic 2 – Weather: weather, hot, sunny, forecast, today, temperature
+
+Topic 3 – Horse Racing: horses, spectators, cheered, finish, line, jockey
+
+Topic 4 – Mixed / Event Coverage: event, crowd, fans, excitement, performance, season
+
+Documents aligned well with these topics, confirming that LDA separated the corpus into four distinct themes.
+
+
+5. Conclusion
+
+Conclusion
+The NLP pipeline successfully processed text data, extracted key terms with TF-IDF, generated semantic word relationships using Word2Vec,
+and identified four coherent topics through LDA. These results demonstrate how preprocessing, feature extraction, embeddings,
+and topic modeling can work together to uncover structure and insights within unstructured text.
+
