@@ -58,9 +58,8 @@ Topic 4 – Mixed / Event Coverage: event, crowd, fans, excitement, performance,
 Documents aligned well with these topics, confirming that LDA separated the corpus into four distinct themes.
 
 
-5. Conclusion
-
 Conclusion
+
 The NLP pipeline successfully processed text data, extracted key terms with TF-IDF, generated semantic word relationships using Word2Vec,
 and identified four coherent topics through LDA. These results demonstrate how preprocessing, feature extraction, embeddings,
 and topic modeling can work together to uncover structure and insights within unstructured text.
