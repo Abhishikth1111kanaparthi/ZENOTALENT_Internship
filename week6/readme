@@ -1,1 +1,10 @@
-* Week 6 assignment
+# Week 6 assignment
+Main objectives of this assignment
+1. Applying text preprocessing (cleaning, tokenization, stopword removal).
+2. Applying feature extraction techniques (Bag-of-Words, TF-IDF, Word Embeddings).
+3. Training machine learning models for text classification.
+4. Evaluating model performance using metrics like accuracy, precision, recall, F1-score.
+5. Visualizing the results (word clouds, confusion matrix).
+
+The dataset used is Financial Sentiment Analysis(Financial sentences with sentiment labels) dataset from kaggle.
+link: https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis
