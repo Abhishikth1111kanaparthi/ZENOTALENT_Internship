@@ -1,1 +1,12 @@
-week7
+
+## Summary:
+
+### Data Analysis Key Findings
+
+*   The baseline MLP model achieved an accuracy of 0.88 on the test set, while the initial CNN model achieved an accuracy of 0.91, and the improved CNN model achieved an accuracy of 0.86.
+*   The baseline MLP showed significant confusion between visually similar classes like 'Shirt' and 'T-shirt/top', and 'Coat' and 'Pullover'.
+*   The initial CNN significantly reduced confusion compared to the MLP and generally showed higher precision and recall across most classes.
+*   The improved CNN, despite incorporating data augmentation and batch normalization, showed a slight decrease in overall accuracy and performance on certain classes (e.g., 'Shirt') compared to the initial CNN.
+*   The number of misclassified images for the baseline MLP was 1243, for the initial CNN was 878, and for the improved CNN was 1392.
+
+
